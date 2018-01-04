@@ -98,7 +98,7 @@ h6, p {
 
 .productImage {
 	height: 140px;
-	width: auto;
+	width: 100%;
 }
 
 #productsContainer {
@@ -139,5 +139,18 @@ h6, p {
 	#bottom3prod {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+	#other2prod {
+		left: 50%;
+		margin-left: -61px;
+	}
+	.productDiv {
+		margin-bottom: 5%;
+	}
+	.f1_container {
+		margin-bottom: 5%;
+	}
+	#f1_card {
+		width: auto;
 	}
 }
