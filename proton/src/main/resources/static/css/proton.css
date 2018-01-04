@@ -1,6 +1,7 @@
 #navBarContainer {
 	border-bottom: solid;
 	border-bottom-width: 1px;
+	padding-bottom: 10px;
 }
 
 .nav-pills .nav-link {
@@ -58,6 +59,11 @@ h6, p {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
 		rgba(0, 0, 0, 0.19);
 	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
 }
 
 #f1_card {
@@ -92,8 +98,40 @@ h6, p {
 }
 
 .navbar {
-	background: blanchedalmond;
+	background: white;
 	padding-bottom: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: white;
+	background-color: black;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	border-radius: 0.5rem;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: white;
+	background-color: black;
+	border-radius: .5rem;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 300ms ease-out;
 }
 
 .productImage {
@@ -132,7 +170,7 @@ h6, p {
 }
 
 .prosconsContainer {
-	padding-bottom: 5%;
+	padding-bottom: 10%;
 }
 
 @media ( max-width : 767.99px) {
@@ -153,4 +191,8 @@ h6, p {
 	#f1_card {
 		width: auto;
 	}
+}
+
+#processContainer {
+	margin-bottom: 10%;
 }
