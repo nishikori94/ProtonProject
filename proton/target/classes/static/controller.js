@@ -11,6 +11,12 @@ app
 						'$window',
 						function($scope, $rootScope, service, $location,
 								$window) {
+							
+							$scope.sendMail = function() {
+								service.sendMail($scope.message).then(function(response) {
+									//$location.path('index.html');
+								});
+							}
 
 							$rootScope.slideIndex = 1;
 							showSlides($rootScope.slideIndex);
@@ -45,5 +51,7 @@ app
 								$scope.slides[$rootScope.slideIndex - 1].style.display = "block";
 								$scope.dots[$rootScope.slideIndex - 1].className += " active";
 							}
+							
+							
 
 						} ]);

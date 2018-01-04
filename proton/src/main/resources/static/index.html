@@ -7,7 +7,10 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+	integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+	crossorigin="anonymous">
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -21,7 +24,7 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-sanitize.js"></script>
 
-<link rel="stylesheet" href="css/slider.css">
+<!--  <link rel="stylesheet" href="css/slider.css">-->
 <link rel="stylesheet" href="css/proton.css">
 
 <!-- AngularJS App Code ==================================================== -->
@@ -253,7 +256,33 @@
 
 	</div>
 
-	
+	<div class="container">
+		<h6 class="titleBig">CONTACT</h6>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in<br> voluptate velit esse cillum dolore
+			eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br>
+			non proident, sunt in culpa qui officia deserunt mollit anim id est
+			laborum.
+		</p>
+		<form name="ContactForm">
+			<input name="email" type="email"
+				data-ng-model="$parent.message.email"
+				class="col-md-3 col-6 form-control" required><br />
+			<textarea class="col-md-3 col-6 form-control" id="subject" rows="1"
+				data-ng-model="$parent.message.subject"></textarea>
+			<br />
+			<textarea class="col-md-3 col-6 form-control" id="message" rows="5"
+				data-ng-model="$parent.message.message"></textarea>
+			<br />
+			<button class="col-md-3 col-4 form-control btn btn-primary btn-lg"
+				data-ng-click="sendMail()">Submit</button>
+		</form>
+	</div>
+
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -268,6 +297,6 @@
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
 		integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
 		crossorigin="anonymous"></script>
-	
+
 </body>
 </html>
