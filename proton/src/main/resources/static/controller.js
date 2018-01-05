@@ -11,11 +11,16 @@ app
 						'$window',
 						function($scope, $rootScope, service, $location,
 								$window) {
-							
+
 							$scope.sendMail = function() {
-								service.sendMail($scope.message).then(function(response) {
-									//$location.path('index.html');
-								});
+								service.sendMail($scope.message).then(
+										function(response) {
+											if (response.status === 200) {
+												$window.alert("Email sent!");
+											} else {
+												$window.alert("Enter the correct email!");
+											}
+										});
 							}
 
 							$rootScope.slideIndex = 1;
@@ -51,7 +56,5 @@ app
 								$scope.slides[$rootScope.slideIndex - 1].style.display = "block";
 								$scope.dots[$rootScope.slideIndex - 1].className += " active";
 							}
-							
-							
 
 						} ]);
