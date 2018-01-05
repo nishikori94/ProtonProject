@@ -3,7 +3,7 @@
 angular.module('routerApp', [ 'ui.router', 'services', 'controllers' ]).config(
 		function($stateProvider, $urlRouterProvider) {
 
-			$urlRouterProvider.otherwise('/home/slider');
+			$urlRouterProvider.otherwise('/home');
 
 			$stateProvider
 

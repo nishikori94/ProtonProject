@@ -1,4 +1,4 @@
-package model;
+package proton.Model;
 
 import lombok.Data;
 

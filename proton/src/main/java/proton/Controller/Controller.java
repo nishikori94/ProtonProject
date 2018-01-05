@@ -1,4 +1,4 @@
-package controller;
+package proton.Controller;
 
 import javax.validation.Valid;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import model.Message;
+import proton.Model.Message;
 
 @RestController
 @RequestMapping("/controller")
@@ -25,16 +25,16 @@ public class Controller {
 		this.javaMailSender = javaMailSender;
 	}
 	
-	@PostMapping(path = "/sendMessage")
+	@PostMapping(path = "sendMail")
 	@ResponseStatus(HttpStatus.CREATED)
-	public void save(@Valid @RequestBody Message message) {
+	public void send(@Valid @RequestBody Message message) {
 		try {
 			SimpleMailMessage mail = new SimpleMailMessage();
 			mail.setTo("mgvero94@gmail.com");
 			mail.setFrom("isaisaija@gmail.com");
 			mail.setSubject(message.getSubject());
-
-			mail.setText(message.getMessage() + "/n" + message.getEmail());
+			String newLine = System.getProperty("line.separator");
+			mail.setText(message.getMessage() + newLine + newLine + "Mail sent from: " + message.getEmail());
 
 			javaMailSender.send(mail);
 		} catch (Exception m) {
