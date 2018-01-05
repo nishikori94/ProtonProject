@@ -1,5 +1,5 @@
 <div>
-	<div class="container-fluid" style="margin-top: 92px">
+	<div class="container-fluid" id="carouselContainer">
 		<div id="carouselExampleIndicators" class="carousel slide"
 			data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -36,28 +36,30 @@
 	</div>
 
 	<div class="container" id="overviewContainer">
-		<h6 class="titleBig">Quick Overview</h6>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-			eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-			dolor in reprehenderit in<br> voluptate velit esse cillum dolore
-			eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br>
-			non proident, sunt in culpa qui officia deserunt mollit anim id est
-			laborum.
-		</p>
-		<br> <br>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-			eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-			dolor in reprehenderit in<br> voluptate velit esse cillum dolore
-			eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br>
-			non proident, sunt in culpa qui officia deserunt mollit anim id est
-			laborum.
-		</p>
+		<div id="innerOverviewDiv">
+			<h6 class="titleBig">Quick Overview</h6>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+				dolor in reprehenderit in<br> voluptate velit esse cillum
+				dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br>
+				non proident, sunt in culpa qui officia deserunt mollit anim id est
+				laborum.
+			</p>
+			<br> <br>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+				dolor in reprehenderit in<br> voluptate velit esse cillum
+				dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br>
+				non proident, sunt in culpa qui officia deserunt mollit anim id est
+				laborum.
+			</p>
+		</div>
 	</div>
 
 	<div class="container" id="productsContainer">
@@ -82,15 +84,15 @@
 			</a>
 		</div>
 		<div class="row justify-content-between" id="bottom3prod">
-			<a href="#" class="col-md-3 col-5 productDiv"> <img
+			<a href="#" class="col-md-4 col-5 productDiv"> <img
 				class="productImage" src="/images/products/Handball.png"
 				class="rounded" alt="...">
 				<p>Handball</p>
-			</a> <a href="#" class="col-md-3 col-5 productDiv"> <img
+			</a> <a href="#" class="col-md-4 col-5 productDiv"> <img
 				class="productImage" src="/images/products/Other1.png"
 				class="rounded" alt="...">
 				<p>Other1</p>
-			</a> <a href="#" class="col-md-3 col-5 productDiv" id="other2prod"> <img
+			</a> <a href="#" class="col-md-4 col-5 productDiv" id="other2prod"> <img
 				class="productImage" src="/images/products/Other2.png"
 				class="rounded" alt="...">
 				<p>Other2</p>
@@ -185,8 +187,6 @@
 
 	</div>
 
-
-
 	<div class="container" id="processContainer">
 
 		<div class="processDiv">
@@ -250,47 +250,51 @@
 		<br>
 	</div>
 
-	<div class="container">
-		<h6 class="titleBig">CONTACT</h6>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-			eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
-			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-			dolor in reprehenderit in<br> voluptate velit esse cillum dolore
-			eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br>
-			non proident, sunt in culpa qui officia deserunt mollit anim id est
-			laborum.
-		</p>
-		<form name="ContactForm">
-			<input name="email" type="email"
-				data-ng-model="$parent.message.email"
-				class="col-md-3 col-6 form-control" required><br />
-			<textarea class="col-md-3 col-6 form-control" id="subject" rows="1"
-				data-ng-model="$parent.message.subject"></textarea>
-			<br />
-			<textarea class="col-md-3 col-6 form-control" id="message" rows="5"
-				data-ng-model="$parent.message.message"></textarea>
-			<br />
-			<button class="col-md-3 col-4 form-control btn btn-primary btn-lg"
-				data-ng-click="sendMail()">Submit</button>
-		</form>
+	<div class="container" id="contactContainer">
+		<div id="contactText">
+			<h6 class="titleBig">CONTACT</h6>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+				dolor in reprehenderit in<br> voluptate velit esse cillum
+				dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat<br>
+				non proident, sunt in culpa qui officia deserunt mollit anim id est
+				laborum.
+			</p>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-3 col-6" id="contactDiv1"
+				style="text-align: center;">
+				<div style="display: inline-block; text-align: left;">
+					<h4>NAME</h4>
+					</br>
+					<h4>ADDRESS</h4>
+					</br>
+					<h4>ZIP CODE</h4>
+					</br>
+					<h4>PHONE NO</h4>
+					</br>
+					<h4>EMAIL</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<form name="ContactForm">
+					<input name="email" type="email"
+						data-ng-model="$parent.message.email" class="form-control"
+						required> <br />
+					<textarea class="form-control" id="subject" rows="1"
+						data-ng-model="$parent.message.subject"></textarea>
+					<br />
+					<textarea class="form-control" id="message" rows="5"
+						data-ng-model="$parent.message.message"></textarea>
+					<br />
+					<button class="form-control btn btn-primary btn-lg"
+						data-ng-click="sendMail()">Submit</button>
+				</form>
+			</div>
+		</div>
 	</div>
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
-		integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-		crossorigin="anonymous"></script>
-
-	<script src="js/slide.js"></script>
 
 </div>
