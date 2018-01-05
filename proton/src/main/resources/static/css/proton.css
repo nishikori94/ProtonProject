@@ -1,7 +1,29 @@
+body {
+	background: #4974b7;
+	padding: 62px 0 0 0;
+}
+
+h4 {
+	color: #cecece;
+}
+
+body, html {
+	height: 100%;
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+	color: #4974b7;
+}
+
 #navBarContainer {
-	border-bottom: solid;
+	border-bottom: solid white;
 	border-bottom-width: 1px;
 	padding-bottom: 10px;
+	background: #4974b7;
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+	color: white;
 }
 
 .nav-pills .nav-link {
@@ -30,6 +52,7 @@
 
 h6, p {
 	text-align: center;
+	color: white;
 }
 
 .titleBig {
@@ -39,43 +62,48 @@ h6, p {
 #overviewContainer {
 	padding-top: 80px;
 	padding-bottom: 40px;
+	height: 100%;
 }
 
 #innerOverviewDiv {
-	background-color: gainsboro;
+	background-color: #89a5d6;
 	height: 80%
 }
 
 #carouselContainer {
 	padding-top: 80px;
 	padding-bottom: 40px;
+	height: 100%;
 }
 
 #prosconsContainer {
 	padding-top: 80px;
 	padding-bottom: 40px;
+	height: 100%;
 }
 
 #contactContainer {
 	padding-top: 65px;
 	margin-bottom: 5%;
+	height: 80%;
 }
 
 #processContainer {
 	padding-top: 80px;
+	height: 100%;
 }
 
 .productDiv {
 	max-width: 201.75px;
 	height: 200px;
 	border-radius: 1rem;
-	border: blue solid;
+	border: lightblue solid;
 	padding-top: 15px;
 	text-decoration: none;
 }
 
 .productDiv:hover {
-	background-color: lightblue;
+	background-color: white;
 	transform: scale(1.1, 1.1);
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
 		rgba(0, 0, 0, 0.19);
@@ -87,11 +115,15 @@ h6, p {
 	transition: all 500ms ease;
 }
 
+.productDiv:hover p {
+	color: #4974b7;
+}
+
 #f1_card {
 	width: 200px;
 	height: 200px;
 	border-radius: 1rem;
-	border: blue solid;
+	border: white solid;
 	text-decoration: none;
 	transform-style: preserve-3d;
 	transition: all 1.0s linear;
@@ -100,6 +132,11 @@ h6, p {
 #f1_card:hover {
 	transform: rotateY(180deg);
 	box-shadow: -5px 5px 5px;
+	background-color: white;
+}
+
+#f1_card:hover span {
+	color: #4974b7;
 }
 
 .face {
@@ -119,22 +156,25 @@ h6, p {
 }
 
 .navbar {
-	background: white;
+	background: #4974b7;
 	padding-bottom: 0px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: black;
+	color: white;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-	color: white;
-	background-color: black;
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
+	{
+	color: #4974b7;
+	background-color: white;
+	border-radius: 0.5rem;
+	text-decoration: none;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
 	text-decoration: none;
-	background-color: black;
+	background-color: #4974b7;
 	color: white;
 	border-radius: 0.5rem;
 	-webkit-transition: all 300ms ease;
@@ -145,8 +185,8 @@ h6, p {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	color: white;
-	background-color: black;
+	color: #4974b7;
+	background-color: white;
 	border-radius: .5rem;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
@@ -181,6 +221,7 @@ h6, p {
 }
 
 .titleSpan {
+	color: white;
 	vertical-align: middle;
 	line-height: 12;
 }
@@ -221,4 +262,50 @@ h6, p {
 
 #contactText {
 	margin-bottom: 3%;
+}
+
+.form-control {
+	border-radius: .75rem;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+	border-radius: .75rem;
+}
+
+#down {
+	width: 50px;
+	height: 50px;
+}
+
+#downDiv {
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#downA {
+	width: 50px;
+	height: 50px;
+}
+
+#downA:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+#down:hover {
+	transform: scale(1.1, 1.1);
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
+		rgba(0, 0, 0, 0.19);
+	text-decoration: none;
+	-webkit-transition: all 750ms ease;
+	-moz-transition: all 750ms ease;
+	-ms-transition: all 750ms ease;
+	-o-transition: all 750ms ease;
+	transition: all 750ms ease;
 }

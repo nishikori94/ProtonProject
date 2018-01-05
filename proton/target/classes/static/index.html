@@ -27,6 +27,7 @@
 <!--  <link rel="stylesheet" href="css/slider.css">-->
 <link rel="stylesheet" href="css/proton.css">
 <link rel="stylesheet" href="css/slide.css">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
 
 <!-- AngularJS App Code ==================================================== -->
 <script src="app.js"></script>
@@ -39,15 +40,11 @@
 <body>
 	<nav class="navbar navbar-expand-md navbar-light fixed-top">
 		<div class="container" id="navBarContainer">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#collapsibleNavbar"
-				aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<a class="navbar-brand" href="#"> <img src="/images/proton.png"
+				width="140" height="30" alt="">
+			</a>
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto" id="menu">
 					<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
 					<!-- Dropdown -->
 					<li class="nav-item dropdown"><a
@@ -64,7 +61,8 @@
 						</div></li>
 					<li class="nav-item"><a class="nav-link" href="#">CONF.
 							TOOL</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">CONTACTS</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="#contactContainer">CONTACTS</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
 				</ul>
 			</div>
@@ -72,7 +70,10 @@
 	</nav>
 	<div>
 		<div ui-view></div>
+		<script src="js/slide.js"></script>
 	</div>
+
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -87,6 +88,6 @@
 		integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
 		crossorigin="anonymous"></script>
 
-	<script src="js/slide.js"></script>
+
 </body>
 </html>
