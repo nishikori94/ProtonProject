@@ -1,10 +1,9 @@
 body {
-	background: #4974b7;
-	padding: 62px 0 0 0;
+	background: #6699ff;
 }
 
 h4 {
-	color: #cecece;
+	color: #9999cc;
 }
 
 body, html {
@@ -12,14 +11,18 @@ body, html {
 }
 
 .navbar-light .navbar-nav .show>.nav-link {
-	color: #4974b7;
+	color: #6699ff;
+}
+
+.dropdown:hover>.dropdown-menu {
+	display: block;
 }
 
 #navBarContainer {
 	border-bottom: solid white;
 	border-bottom-width: 1px;
 	padding-bottom: 10px;
-	background: #4974b7;
+	background: #6699ff;
 }
 
 .navbar-light .navbar-nav .show>.nav-link {
@@ -44,19 +47,24 @@ body, html {
 
 .carousel-control-prev-icon {
 	background-image: url(/images/prev.png);
+	border-radius: 0.75rem;
 }
 
 .carousel-control-next-icon {
 	background-image: url(/images/next.png);
+	border-radius: 0.75rem;
 }
 
 h6, p {
 	text-align: center;
 	color: white;
+	font-family: 'Arial';
+	font-size: 20px;
 }
 
 .titleBig {
-	font-size: 4rem;
+	font-size: 50px;
+	font-family: 'Arial';
 }
 
 #overviewContainer {
@@ -66,7 +74,7 @@ h6, p {
 }
 
 #innerOverviewDiv {
-	background-color: #89a5d6;
+	background-color: rgba(255, 255, 255, 0.1);
 	height: 80%
 }
 
@@ -83,7 +91,7 @@ h6, p {
 }
 
 #contactContainer {
-	padding-top: 65px;
+	padding-top: 80px;
 	margin-bottom: 5%;
 	height: 80%;
 }
@@ -93,16 +101,36 @@ h6, p {
 	height: 100%;
 }
 
-.productDiv {
-	max-width: 201.75px;
+.productDiv1 {
 	height: 200px;
 	border-radius: 1rem;
 	border: lightblue solid;
 	padding-top: 15px;
 	text-decoration: none;
+	background-image: url(../images/products/Handball.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	text-align: left;
 }
 
-.productDiv:hover {
+.productDiv1 a {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+a:hover {
+	color: #0056b3;
+	text-decoration: none;
+}
+
+p: hover {
+	text-decoration: none;
+}
+
+.productDiv1:hover {
 	background-color: white;
 	transform: scale(1.1, 1.1);
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
@@ -120,7 +148,6 @@ h6, p {
 }
 
 #f1_card {
-	width: 200px;
 	height: 200px;
 	border-radius: 1rem;
 	border: white solid;
@@ -131,8 +158,12 @@ h6, p {
 
 #f1_card:hover {
 	transform: rotateY(180deg);
-	box-shadow: -5px 5px 5px;
+	-webkit-box-shadow: -12px 18px 43px -2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -12px 18px 43px -2px rgba(0, 0, 0, 0.75);
+	box-shadow: -12px 18px 43px -2px rgba(0, 0, 0, 0.75);
 	background-color: white;
+	-moz-box-shadow: -12px 18px 43px -2px rgba(0, 0, 0, 0.75);
+	box-shadow: -12px 18px 43px -2px rgba(0, 0, 0, 0.75);
 }
 
 #f1_card:hover span {
@@ -156,12 +187,14 @@ h6, p {
 }
 
 .navbar {
-	background: #4974b7;
+	background: #6699ff;
 	padding-bottom: 0px;
 }
 
 .navbar-light .navbar-nav .nav-link {
 	color: white;
+	font-family: 'Arial';
+	font-size: 17px;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
@@ -197,7 +230,6 @@ h6, p {
 
 .productImage {
 	height: 140px;
-	width: 100%;
 }
 
 #productsContainer {
@@ -217,7 +249,6 @@ h6, p {
 	padding-top: 1%;
 	padding-left: 15%;
 	padding-right: 15%;
-	margin-bottom: 5%;
 }
 
 .titleSpan {
@@ -230,10 +261,6 @@ h6, p {
 	#f1_card {
 		width: 100%;
 	}
-	#bottom3prod .f1_container {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
 }
 
 @media ( max-width : 767.99px) {
@@ -242,17 +269,16 @@ h6, p {
 		padding-right: 5%;
 	}
 	#other2prod {
-		left: 50%;
-		margin-left: -61px;
+		margin: 0 auto;
 	}
-	.productDiv {
-		margin-bottom: 5%;
+	.design {
+		text-align: center;
 	}
-	.f1_container {
-		margin-bottom: 5%;
-	}
-	#f1_card {
-		width: auto;
+}
+
+@media ( min-width : 768px) {
+	.design {
+		text-align: right;
 	}
 }
 
@@ -275,6 +301,7 @@ h6, p {
 #down {
 	width: 50px;
 	height: 50px;
+	border-radius: 0.75rem;
 }
 
 #downDiv {
@@ -311,23 +338,68 @@ h6, p {
 }
 
 .footer-bottom {
-    background-color: #15224f;
-    min-height: 30px;
-    width: 100%;
+	background-color: #15224f;
+	min-height: 30px;
+	width: 100%;
 }
+
 .copyright {
-    color: #fff;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px 0;
+	color: #fff;
+	line-height: 30px;
+	min-height: 30px;
+	padding: 7px 0;
 }
+
 .design {
-    color: #fff;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px 0;
-    text-align: right;
+	color: #fff;
+	line-height: 30px;
+	min-height: 30px;
+	padding: 7px 0;
 }
+
 .design a {
-    color: #fff;
+	color: #fff;
+}
+
+.dropdown-menu {
+	border-radius: .75rem;
+}
+
+.form-control {
+	background-color: #e1e7ed;
+}
+
+.btn-primary {
+	background-color: #007bff
+}
+
+#slide11 {
+	background-image: url('../images/carousel1.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#slide22 {
+	background-image: url('../images/carousel1.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+#slide33 {
+	background-image: url('../images/carousel1.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.carousel-item {
+	width: 100%;
+	height: 400px;
+}
+
+#lastOne {
+	margin: 0 auto;
 }

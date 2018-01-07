@@ -61,13 +61,10 @@ img {
 
 /* The dots/bullets/indicators */
 .dot {
-	border: solid;
 	cursor: pointer;
-	width: 15%;
+	width: 10%;
 	height: auto;
 	margin: 0 2px;
-	border-radius: 50%;
-	border-color: white;
 	display: inline-block;
 	transition: background-color 0.6s ease;
 	cursor: pointer;

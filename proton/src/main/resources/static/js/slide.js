@@ -28,3 +28,9 @@ function showSlides(n) {
 	slides[slideIndex - 1].style.display = "block";
 	dots[slideIndex - 1].className += " active";
 }
+
+// adjust height of .fullheight elements on window resize
+$(window).resize(function() {
+	wheight = $(window).height(); // get the height of the window
+	$('.fullheight').css('height', wheight); // set to window tallness
+});

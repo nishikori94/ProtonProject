@@ -15,6 +15,14 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+
+
+<!--  <link rel="stylesheet" href="css/slider.css">-->
+<link rel="stylesheet" href="css/proton.css">
+<link rel="stylesheet" href="css/slide.css">
+<link rel="stylesheet" href="css/multiSlider.css">
+<!-- <link rel="stylesheet" href="css/jquery.fullPage.css">
+ -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
 <script
@@ -24,10 +32,6 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-sanitize.js"></script>
 
-<!--  <link rel="stylesheet" href="css/slider.css">-->
-<link rel="stylesheet" href="css/proton.css">
-<link rel="stylesheet" href="css/slide.css">
-<link rel="stylesheet" href="css/jquery.fullPage.css">
 
 <!-- AngularJS App Code ==================================================== -->
 <script src="app.js"></script>
@@ -43,6 +47,11 @@
 			<a class="navbar-brand" href="#"> <img src="/images/proton.png"
 				width="140" height="30" alt="">
 			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul class="navbar-nav ml-auto" id="menu">
 					<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
@@ -51,8 +60,8 @@
 						class="nav-link dropdown-toggle" href="#" id="navbardrop"
 						data-toggle="dropdown"> PRODUCTS </a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Basketball</a> <a
-								class="dropdown-item" href="#">Football</a> <a
+							<a class="dropdown-item" href="#processContainer">Basketball</a>
+							<a class="dropdown-item" href="#">Football</a> <a
 								class="dropdown-item" href="#">Frisbee</a><a
 								class="dropdown-item" href="#">Beach volleyball</a> <a
 								class="dropdown-item" href="#">Handball</a> <a
@@ -70,7 +79,6 @@
 	</nav>
 	<div>
 		<div ui-view></div>
-		<script src="js/slide.js"></script>
 	</div>
 
 
@@ -88,6 +96,14 @@
 		integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
 		crossorigin="anonymous"></script>
 
-
+	<script src="js/slide.js"></script>
+	<script src="js/multiSlider.js"></script>
+	<!-- 
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage();
+		});
+	</script> -->
 </body>
 </html>
