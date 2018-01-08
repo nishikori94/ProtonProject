@@ -42,41 +42,44 @@
 <title>PROTON</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-light fixed-top">
-		<div class="container" id="navBarContainer">
-			<a class="navbar-brand" href="#"> <img src="/images/proton.png"
-				width="140" height="30" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar"
-				aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav ml-auto" id="menu">
-					<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-					<!-- Dropdown -->
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbardrop"
-						data-toggle="dropdown"> PRODUCTS </a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#processContainer">Basketball</a>
-							<a class="dropdown-item" href="#">Football</a> <a
-								class="dropdown-item" href="#">Frisbee</a><a
-								class="dropdown-item" href="#">Beach volleyball</a> <a
-								class="dropdown-item" href="#">Handball</a> <a
-								class="dropdown-item" href="#">Other1</a> <a
-								class="dropdown-item" href="#">Other2</a>
-						</div></li>
-					<li class="nav-item"><a class="nav-link" href="#">CONF.
-							TOOL</a></li>
-					<li class="nav-item"><a class="nav-link"
-						href="#contactContainer">CONTACTS</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
-				</ul>
+	<div>
+		<nav class="navbar navbar-expand-md navbar-light fixed-top">
+			<div class="container" id="navBarContainer">
+
+				<a class="navbar-brand" href="#"> <img src="/images/proton.png"
+					width="140" height="30" alt="">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav ml-auto" id="menu">
+						<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+						<!-- Dropdown -->
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="#" id="navbardrop"
+							data-toggle="dropdown"> PRODUCTS </a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#processContainer">Basketball</a>
+								<a class="dropdown-item" href="#">Football</a> <a
+									class="dropdown-item" href="#">Frisbee</a><a
+									class="dropdown-item" href="#">Beach volleyball</a> <a
+									class="dropdown-item" href="#">Handball</a> <a
+									class="dropdown-item" href="#">Other1</a> <a
+									class="dropdown-item" href="#">Other2</a>
+							</div></li>
+						<li class="nav-item"><a class="nav-link" href="#">CONF.
+								TOOL</a></li>
+						<li class="nav-item"><a class="nav-link"
+							href="#contactContainer">CONTACTS</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
+	</div>
 	<div>
 		<div ui-view></div>
 	</div>
