@@ -439,3 +439,22 @@ p: hover {
 #lastOne {
 	margin: 0 auto;
 }
+
+#prod {
+	padding-top: 60px;
+}
+.title {
+	padding-right: 85%;
+ }
+ 
+.sports{
+background-size:cover;
+}
+
+.lis {
+	color:white;
+}
+
+#fris {
+	max-width: 90%;
+}
