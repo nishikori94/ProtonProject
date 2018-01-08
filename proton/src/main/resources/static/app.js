@@ -15,5 +15,14 @@ angular.module('routerApp', [ 'ui.router', 'services', 'controllers' ]).config(
 				url : '/products',
 				templateUrl : 'pages/products.html',
 				controller : 'controller'
+			}).state('info', {
+				url : '/info',
+				templateUrl : 'pages/impressum.html',
+				controller : 'controller'
+			})
+			.state('basketball', {
+				url : '/basketball',
+				templateUrl : 'pages/basketball.html',
+				controller : 'controller'
 			})
 		});
