@@ -11,9 +11,9 @@ angular.module('routerApp', [ 'ui.router', 'services', 'controllers' ]).config(
 				url : '/home',
 				templateUrl : 'pages/home.html',
 				controller : 'controller'
-			}).state('home.slider', {
-				url : '/slider',
-				templateUrl : 'pages/slider.html',
+			}).state('products', {
+				url : '/products',
+				templateUrl : 'pages/products.html',
 				controller : 'controller'
 			})
 		});

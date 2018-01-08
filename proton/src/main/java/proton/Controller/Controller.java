@@ -26,8 +26,8 @@ public class Controller {
 	}
 
 	@PostMapping(path = "sendMail")
-	public ResponseEntity<?> send(@Valid @RequestBody Message message) {
-
+	public ResponseEntity<String> send(@Valid @RequestBody Message message) {
+		String response = null;
 		String newLine = System.getProperty("line.separator");
 		if (message.getEmail() != null) {
 			try {
@@ -40,24 +40,26 @@ public class Controller {
 
 				javaMailSender.send(mail);
 
-			} catch (Exception m) {
-			}
-			
-			try {
-				SimpleMailMessage mail2 = new SimpleMailMessage();
-				mail2.setTo("isaisaija@gmail.com");
-				mail2.setFrom("protoncontactform@gmail.com");
-				mail2.setSubject(message.getSubject());
-				mail2.setText(message.getMessage() + newLine + newLine + "Sender: " + message.getEmail());
-				javaMailSender.send(mail2);
+				try {
+					SimpleMailMessage mail2 = new SimpleMailMessage();
+					mail2.setTo("isaisaija@gmail.com");
+					mail2.setFrom("protoncontactform@gmail.com");
+					mail2.setSubject(message.getSubject());
+					mail2.setText(message.getMessage() + newLine + newLine + "Sender: " + message.getEmail());
+					javaMailSender.send(mail2);
 
+				} catch (Exception m) {
+				}
+				
 			} catch (Exception m) {
+				response = "BAD EMAIL";
+				return new ResponseEntity<>(response, HttpStatus.OK);
 			}
-			
-			return new ResponseEntity<>(HttpStatus.OK);
-			
+			response = "OK";
+			return new ResponseEntity<>(response, HttpStatus.OK);			
 		} else {
-			return new ResponseEntity<>(HttpStatus.CREATED);
+			response = "BAD EMAIL";
+			return new ResponseEntity<>(response, HttpStatus.OK);
 		}
 	}
 }
