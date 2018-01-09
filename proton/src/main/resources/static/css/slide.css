@@ -1,5 +1,8 @@
 .mySlides {
-	display: none
+	display: none;
+	padding-left: 75px;
+	padding-right: 75px;
+	text-align: center;
 }
 
 img {
@@ -152,32 +155,18 @@ p.divider span.divider {
 	position: relative;
 }
 
-.wrap:before {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 0;
-	border-top: 1px solid black;
-	background: black;
-	width: 100%;
-	transform: translateY(-50%);
-}
-
 .dot {
 	width: 100px;
 	height: 100px;
 	margin-left: 5px;
 	margin-right: 5px;
-	background-image: url(../images/needle.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url(../images/needle.png);
 }
 
 .activeS, .dot:hover {
 	transform: scale(1.2, 1.2);
-	background-image: url(../images/Dres.png);
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -193,8 +182,96 @@ p.divider span.divider {
 	content: '';
 	position: absolute;
 	top: 50%;
-	left: 0;
+	left: 3%;
 	border-top: 1px solid white;
-	width: 100%;
-	transform: translateY(-50%);
+	width: 90%;
+}
+
+#prevProcess {
+	width: 75px;
+}
+
+#nextProcess {
+	width: 75px;
+}
+
+h3 {
+	color: #3399ff;
+}
+
+#prevProcessIcon {
+	height: 30px;
+	width: 30px;
+	border-radius: 0;
+	box-shadow: none;
+	background-image: url('../images/Arrow_left_Blue.png');
+}
+
+#nextProcessIcon {
+	height: 30px;
+	width: 30px;
+	border-radius: 0;
+	box-shadow: none;
+	background-image: url('../images/Arrow_right_Blue.png');
+	box-shadow: none;
+}
+
+#jerseyDot {
+	background-image: url('../images/belo/dres.png')
+}
+
+#jerseyDot: hover {
+	background-image: url('../images/plavo/dres.png')
+}
+
+#jerseyDot.activeS {
+	background-image: url('../images/plavo/dres.png')
+}
+
+#approwedDot {
+	background-image: url('../images/belo/Approwed.png')
+}
+
+#approwedDot: hover {
+	background-image: url('../images/plavo/Approwed.png')
+}
+
+#approwedDot.activeS {
+	background-image: url('../images/plavo/Approwed.png')
+}
+
+#needleDot {
+	background-image: url('../images/belo/needle.png')
+}
+
+#needleDot: hover {
+	background-image: url('../images/plavo/needle.png')
+}
+
+#needleDot.activeS {
+	background-image: url('../images/plavo/needle.png')
+}
+
+#pencilDot {
+	background-image: url('../images/belo/Pencil.png')
+}
+
+#pencilDot: hover {
+	background-image: url('../images/plavo/Pencil.png')
+}
+
+#pencilDot.activeS {
+	background-image: url('../images/plavo/Pencil.png')
+}
+
+#truckDot {
+	background-image: url('../images/belo/Truck.png')
+}
+
+#truckDot: hover {
+	background-image: url('../images/plavo/Truck.png')
+}
+
+#truckDot.activeS {
+	background-image: url('../images/plavo/Truck.png')
 }
