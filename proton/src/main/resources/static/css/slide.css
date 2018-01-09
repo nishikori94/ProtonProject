@@ -140,7 +140,8 @@ p.divider span.divider {
 
 .wrap {
 	text-align: center;
-	margin: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	position: relative;
 }
 
@@ -165,6 +166,12 @@ p.divider span.divider {
 .dot {
 	width: 100px;
 	height: 100px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-image: url(../images/needle.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 	background-image: url(../images/needle.png);
 }
 
@@ -172,15 +179,14 @@ p.divider span.divider {
 	transform: scale(1.2, 1.2);
 	background-image: url(../images/Dres.png);
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 	text-decoration: none;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
-	text-decoration: none;
-	background-size: cover;
 }
 
 .wrap:before {

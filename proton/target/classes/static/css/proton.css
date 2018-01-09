@@ -137,6 +137,11 @@ h6, p {
 	background-image: url(../images/products/Handball.png);
 }
 
+.productDiv {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
 .productDiv1 {
 	height: 200px;
 	border-radius: 1rem;
@@ -180,6 +185,11 @@ p: hover {
 
 .productDiv:hover p {
 	color: #4974b7;
+}
+
+.f1_container {
+	padding-bottom: 1%;
+	padding-top: 1%;
 }
 
 #f1_card {
@@ -275,14 +285,11 @@ p: hover {
 }
 
 #upper4prod {
-	padding-top: 1%;
-	padding-bottom: 1%;
 	padding-left: 5%;
 	padding-right: 5%;
 }
 
 #bottom3prod {
-	padding-top: 1%;
 	padding-left: 15%;
 	padding-right: 15%;
 }
@@ -489,4 +496,8 @@ p: hover {
 .sportDiv {
 	padding-top: 80px;
 	padding-bottom: 80px;
+}
+
+.col-12.bigImage {
+	min-height: 70vh;
 }
