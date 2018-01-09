@@ -59,23 +59,11 @@ img {
 	top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-	cursor: pointer;
-	width: 100px;
-	height: 100px;
-	margin: 0 2px;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-	cursor: pointer;
-}
-
 .mySlides img {
 	height: 250px;
 }
 
-.active, .dot:hover {
+.activeS, .dot:hover {
 	transform: scale(1.1, 1.1);
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
@@ -148,4 +136,59 @@ p.divider span.divider {
 .processImg {
 	width: 100%;
 	height: 100%;
+}
+
+.wrap {
+	text-align: center;
+	margin: 40px;
+	position: relative;
+}
+
+.links {
+	padding: 0 0px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.wrap:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	border-top: 1px solid black;
+	background: black;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+.dot {
+	width: 100px;
+	height: 100px;
+	background-image: url(../images/needle.png);
+}
+
+.activeS, .dot:hover {
+	transform: scale(1.2, 1.2);
+	background-image: url(../images/Dres.png);
+	background-position: center;
+	background-size: cover;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	text-decoration: none;
+	background-size: cover;
+}
+
+.wrap:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	border-top: 1px solid white;
+	width: 100%;
+	transform: translateY(-50%);
 }

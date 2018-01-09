@@ -440,21 +440,53 @@ p: hover {
 	margin: 0 auto;
 }
 
-#prod {
-	padding-top: 60px;
-}
 .title {
 	padding-right: 85%;
- }
- 
-.sports{
-background-size:cover;
+}
+
+.sports {
+	background-size: cover;
 }
 
 .lis {
-	color:white;
+	color: white;
 }
 
 #fris {
 	max-width: 90%;
+}
+
+.bigImage {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#basketImage {
+	background-image: url('../images/dreso2.png');
+}
+
+#bvolleyImage {
+	background-image: url('../images/dresbv.png');
+}
+
+#footballImage {
+	background-image: url('../images/dresf.png')
+}
+
+#frisbeeImage {
+	background-image: url('../images/dresfr.png')
+}
+
+#handballImage {
+	background-image: url('../images/dresh.png')
+}
+
+#other1Image {
+	background-image: url('../images/dreso2.png')
+}
+
+.sportDiv {
+	padding-top: 80px;
+	padding-bottom: 80px;
 }

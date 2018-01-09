@@ -58,18 +58,19 @@
 						<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
 						<!-- Dropdown -->
 						<li class="nav-item dropdown"><a
-							class="nav-link dropdown-toggle" href="#" data-ui-sref="products" id="navbardrop"
-							data-toggle="dropdown"> PRODUCTS </a>
+							class="nav-link dropdown-toggle" href="#" data-ui-sref="products"
+							id="navbardrop" data-toggle="dropdown"> PRODUCTS </a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#" data-ui-sref="basketball">Basketball</a>
-								<a class="dropdown-item" href="#" data-ui-sref="football">Football</a> <a
-									class="dropdown-item" href="#" data-ui-sref="frisbee">Frisbee</a><a
-									class="dropdown-item" href="#" data-ui-sref="beachvolleyball">Beach volleyball</a> <a
-									class="dropdown-item" href="#" data-ui-sref="handball">Handball</a> <a
-									class="dropdown-item" href="#" data-ui-sref="other1">Other1</a> <a
+								<a class="dropdown-item" href="#" data-ui-sref="football">Football</a>
+								<a class="dropdown-item" href="#" data-ui-sref="frisbee">Frisbee</a><a
+									class="dropdown-item" href="#" data-ui-sref="beachvolleyball">Beach
+									volleyball</a> <a class="dropdown-item" href="#"
+									data-ui-sref="handball">Handball</a> <a class="dropdown-item"
+									href="#" data-ui-sref="other1">Other1</a> <a
 									class="dropdown-item" href="#" data-ui-sref="other2">Other2</a>
 							</div></li>
-						<li class="nav-item"><a class="nav-link" href="#" >CONF.
+						<li class="nav-item"><a class="nav-link" href="#">CONF.
 								TOOL</a></li>
 						<li class="nav-item"><a class="nav-link"
 							href="#contactContainer">CONTACTS</a></li>
@@ -82,7 +83,25 @@
 	<div>
 		<div ui-view></div>
 	</div>
+	<div class="footer-bottom">
 
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-4 col-6">
+					<div class="copyright">Some text here</div>
+				</div>
+				<div class=" col-md-4 col-6">
+					<div class="copyright">Some text here</div>
+				</div>
+				<div class=" col-md-4 col-12">
+					<div class="design">
+						<a data-ui-sref="info"> Impressum </a> | <a data-ui-sref="info">AGB</a>
+						| <a data-ui-sref="info">Datenzung</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -100,5 +119,4 @@
 
 	<script src="js/slide.js"></script>
 	<script src="js/multiSlider.js"></script>
-
 </html>
