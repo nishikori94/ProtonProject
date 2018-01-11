@@ -217,15 +217,15 @@ h3 {
 }
 
 #jerseyDot {
-	background-image: url('../images/belo/dres.png')
+	background-image: url('../images/dresbeli.png')
 }
 
 #jerseyDot: hover {
-	background-image: url('../images/plavo/dres.png')
+	background-image: url('../images/dresplavi.png')
 }
 
 #jerseyDot.activeS {
-	background-image: url('../images/plavo/dres.png')
+	background-image: url('../images/dresplavi.png')
 }
 
 #approwedDot {
